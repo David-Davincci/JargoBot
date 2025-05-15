@@ -5,7 +5,7 @@ A Telegram bot to monitor Pi Network wallets and automatically transfer funds to
 ## Features
 - Add/Remove wallet by admin via Telegram
 - Constant monitoring (~500ms) for new funds
-- Auto-transfer to whitelisted wallet
+- monitor transactions
 
 ## Deployment on Render
 1. Create a new Web Service on https://dashboard.render.com/
