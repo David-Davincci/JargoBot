@@ -6,7 +6,7 @@ import time
 HORIZON_URL = "https://api.testnet.minepi.com"
 server = Server(horizon_url=HORIZON_URL)
 
-DESTINATION_WALLET = "GXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+DESTINATION_WALLET = "GD4TASG2T5I7IICIEZGH6LXFNRDKZTJZRIHVEHTRFD75GGZRBOOIEO6S"
 
 class PiWallet:
     def __init__(self, mnemonic_phrase):
