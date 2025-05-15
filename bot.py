@@ -42,7 +42,18 @@ if __name__ == "__main__":
     import asyncio
 
     try:
-        asyncio.run(main())
+      import asyncio
+
+try:
+    asyncio.run(main())
+except RuntimeError as e:
+    if str(e) == "This event loop is already running":
+        loop = asyncio.get_event_loop()
+        loop.create_task(main())
+        loop.run_forever()
+    else:
+        raise
+
     except RuntimeError as e:
         if "already running" in str(e):
             loop = asyncio.get_event_loop()
